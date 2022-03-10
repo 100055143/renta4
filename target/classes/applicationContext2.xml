@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+	<bean id="simpleBean" class="com.curso.hellospring.SimpleBean">
+		<constructor-arg ref="dto1"/>
+		<constructor-arg ref="dto2"/>
+	</bean>
+	<bean id="dto1" class="com.curso.hellospring.dto.TestDTO1"/>
+	<bean id="dto2" class="com.curso.hellospring.dto.TestDTO2"/>
+</beans>
